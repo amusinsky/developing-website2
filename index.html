@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Clickable Rectangle with Hover Effect</title>
+  <style>
+    /* Initial rectangle style */
+    .clickable-rect {
+      fill: #ffb623; /* Default color (blue) */
+      transition: fill 0.3s ease; /* Smooth transition for color change */
+    }
+
+    /* Change rectangle color to white on hover */
+    a:hover .clickable-rect {
+      fill: #dffa67; /* White color when hovered */
+    }
+
+    /* Optional text styling */
+    .clickable-text {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      fill: black; /* Text color */
+    }
+
+  </style>
+</head>
+<body>
+
+  
+
+</body>
     <title>Document</title>
 	<link href="test.css" rel="stylesheet" type="text/css">
 	
 </head>
 <body>
- 	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-	<div class="elfsight-app-d2c683ea-509d-4ad9-b3d7-e3b793565b7b" data-elfsight-app-lazy></div>
+
 	<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -48,21 +75,52 @@
 	<stop  offset="0" style="stop-color:#CB4F24"/>
 	<stop  offset="1" style="stop-color:#F7EA3A"/>
 </linearGradient>
-<rect x="176.4" y="290.3" class="st5" width="122.6" height="68.6"/>
-<text transform="matrix(1 0 0 1 209.0863 324.6208)" class="st6 st7"><a href="recipes\lasagna.html">Lasagna</text>
-<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="322.1911" y1="328.0232" x2="445.8089" y2="328.0232">
-	<stop  offset="0" style="stop-color:#CB4F24"/>
-	<stop  offset="1" style="stop-color:#F7EA3A"/>
-</linearGradient>
-<rect x="322.7" y="293.7" class="st8" width="122.6" height="68.6"/>
-<text transform="matrix(1 0 0 1 353.0026 318.8247)"><tspan x="0" y="0" class="st6 st7"><a href="recipes\beefwellington.html">Beef </tspan><tspan x="0" y="21.6" class="st6 st7"><a href="recipes\beefwellington.html">Wellington</tspan></text>
-<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="464.6926" y1="328.7964" x2="588.3104" y2="328.7964">
-	<stop  offset="0" style="stop-color:#CB4F24"/>
-	<stop  offset="1" style="stop-color:#F7EA3A"/>
-</linearGradient>
-<rect x="465.2" y="294.5" class="st9" width="122.6" height="68.6"/>
-<text transform="matrix(1 0 0 1 492.1772 332.4635)" class="st6 st7"><a href="recipes\roastleg.html">Roast leg</text>
-<text transform="matrix(1 0 0 1 213.3644 488.7518)"><tspan x="0" y="0" class="st10 st11 st12">	</tspan><tspan x="26.6" y="0" class="st10 st11">Lorem ipsum dolor sit amet, consectetur adipiscing </tspan><tspan x="5.2" y="17.7" class="st10 st11">Nullam viverra aliquet diam in mattis. Curabitur luctus </tspan><tspan x="42.1" y="35.4" class="st10 st11">tincidunt nulla, et tincidunt velit suscipit a.</tspan><tspan x="-1" y="53.2" class="st10 st11">Donec sodales tempus nulla id pulvinar.Vivamus aliquet </tspan><tspan x="2.7" y="70.9" class="st10 st11">porttitor mauris, vel auctor neque volutpat eu. Aliquam</tspan><tspan x="3.3" y="88.6" class="st10 st11"> sollicitudin ultrices volutpat. Duis pulvinar porta ligula </tspan><tspan x="54.2" y="106.3" class="st10 st11">id pellentesque. Nulla a ultrices ipsum.</tspan><tspan x="35.7" y="124" class="st10 st11">Mauris venenatis, nibh eu dapibus convallis, </tspan><tspan x="37.3" y="141.7" class="st10 st11">neque lacus facilisis leo, quis tempus metus </tspan><tspan x="37.8" y="159.5" class="st10 st11">eros sollicitudin augue. Sed eu velit sit amet</tspan><tspan x="47.8" y="177.2" class="st10 st11"> ipsum consectetur tempus sit amet quis</tspan><tspan x="172" y="203.7" class="st1 st10 st13"> </tspan></text>
+
+
+
+
+
+<defs>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="322.1911" y1="328.0232" x2="445.8089" y2="328.0232">
+	  <stop offset="0" style="stop-color:#CB4F24"/>
+	  <stop offset="1" style="stop-color:#F7EA3A"/>
+	</linearGradient>
+  </defs>
+  <a xlink:href="C:/Users/Ati/Desktop/developing website 6 - Copy - Copy/recipes/lasagna.html">
+	<rect x="176.4" y="290.3" class="clickable-rect" width="122.6" height="68.6" fill="url(#SVGID_3_)"/>
+	<text transform="matrix(1 0 0 1 209.0863 324.6208)" class="st6 st7">Lasagna</text>
+  </a>
+
+
+
+  <defs>
+	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="464.6926" y1="328.7964" x2="588.3104" y2="328.7964">
+	  <stop offset="0" style="stop-color:#CB4F24"/>
+	  <stop offset="1" style="stop-color:#F7EA3A"/>
+	</linearGradient>
+  </defs>
+  <a xlink:href="C:/Users/Ati/Desktop/developing website 6 - Copy - Copy/recipes/beefwellington.html">
+	<rect x="322.7" y="293.7" class="clickable-rect" width="122.6" height="68.6" fill="url(#SVGID_4_)"/>
+	<text transform="matrix(1 0 0 1 353.0026 318.8247)">
+	  <tspan x="0" y="0" class="st6 st7">Beef</tspan>
+	  <tspan x="0" y="21.6" class="st6 st7">Wellington</tspan>
+	</text>
+  </a>
+ 
+			 
+	<svg width="600" height="400">	
+	<!-- Clickable Rectangle and Text with Hover Effect -->
+			<a href="file:///C:/Users/Ati/Desktop/developing%20website%206%20-%20Copy%20-%20Copy/recipes/roastleg.html">
+			  <rect x="465.2" y="294.5" width="122.6" height="68.6" class="clickable-rect" />
+			  <text transform="matrix(1 0 0 1 492.1772 332.4635)" class="clickable-text">Roast leg</text>
+			</a>
+		  </svg>
+		  
+		  
+
+	<text transform="matrix(1 0 0 1 213.3644 488.7518)"><tspan x="0" y="0" class="st10 st11 st12">	</tspan><tspan x="26.6" y="0" class="st10 st11">Lorem ipsum dolor sit amet, consectetur adipiscing </tspan><tspan x="5.2" y="17.7" class="st10 st11">Nullam viverra aliquet diam in mattis. Curabitur luctus </tspan><tspan x="42.1" y="35.4" class="st10 st11">tincidunt nulla, et tincidunt velit suscipit a.</tspan><tspan x="-1" y="53.2" class="st10 st11">Donec sodales tempus nulla id pulvinar.Vivamus aliquet </tspan><tspan x="2.7" y="70.9" class="st10 st11">porttitor mauris, vel auctor neque volutpat eu. Aliquam</tspan><tspan x="3.3" y="88.6" class="st10 st11"> sollicitudin ultrices volutpat. Duis pulvinar porta ligula </tspan><tspan x="54.2" y="106.3" class="st10 st11">id pellentesque. Nulla a ultrices ipsum.</tspan><tspan x="35.7" y="124" class="st10 st11">Mauris venenatis, nibh eu dapibus convallis, </tspan><tspan x="37.3" y="141.7" class="st10 st11">neque lacus facilisis leo, quis tempus metus </tspan><tspan x="37.8" y="159.5" class="st10 st11">eros sollicitudin augue. Sed eu velit sit amet</tspan><tspan x="47.8" y="177.2" class="st10 st11"> ipsum consectetur tempus sit amet quis</tspan><tspan x="172" y="203.7" class="st1 st10 st13"> </tspan></text>
+
+
 <image style="overflow:visible;" width="1200" height="1200" xlink:href="chef.png"  transform="matrix(7.652832e-02 0 0 7.652832e-02 339.485 370.7354)">
 </image>
 <image style="overflow:visible;" width="570" height="440" xlink:href="catering.png"  transform="matrix(0.2958 0 0 0.2958 184.3238 738.942)">
