@@ -33,16 +33,10 @@ p {
 
 
 
-.parallax-text {
-    -webkit-font-smoothing: antialiased; /* Smoothens fonts in Chrome */
-    -moz-osx-font-smoothing: grayscale; /* For Firefox (optional) */
 }
 .parallax1 {
     background-image: url('ocean2.jpg');
-}
-.parallax-text {
-    transform: translateZ(0); /* Or translate3d(0, 0, 0); */
-}
+
 
 
 
