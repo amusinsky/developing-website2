@@ -25,14 +25,29 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    -webkit-transform: translate3d(0, 0, 0); /* For Chrome */
-    transform: translate3d(0, 0, 0);          /* For other browsers */
+   
 
 }
 
+
+
+
+
+.parallax-text {
+    -webkit-font-smoothing: antialiased; /* Smoothens fonts in Chrome */
+    -moz-osx-font-smoothing: grayscale; /* For Firefox (optional) */
+}
 .parallax1 {
     background-image: url('ocean2.jpg');
 }
+.parallax-text {
+    transform: translateZ(0); /* Or translate3d(0, 0, 0); */
+}
+
+
+
+
+
 
 .parallax2 {
     background-image: url('hdd.jpg');
