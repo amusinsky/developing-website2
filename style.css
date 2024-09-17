@@ -20,28 +20,33 @@ p {
 /* Parallax sections */
 .parallax {
     height: 100vh; /* Full viewport height */
-    background-attachment: fixed;
+    background-attachment: scroll; /* Switch to scroll for Chrome compatibility */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-   
-
+    perspective: 1px;
+    transform-style: preserve-3d;
+    will-change: transform;
 }
 
-
-
-
-
+.parallax:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
 }
+
 .parallax1 {
     background-image: url('ocean2.jpg');
-
-
-
-
-
-
+}
 
 .parallax2 {
     background-image: url('hdd.jpg');
@@ -54,9 +59,9 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    will-change: transform;
 }
 
-/* Regular content sections */
 .content-section {
     padding: 100px;
     background: #333;
@@ -67,4 +72,10 @@ p {
     color: #fff;
 }
 
+html {
+    font-size: 100%; /* Ensures consistent base font size */
+}
 
+body {
+    font-size: 16px; /* Fixed base font size */
+}
