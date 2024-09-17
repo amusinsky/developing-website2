@@ -29,11 +29,11 @@ p {
 }
 
 .parallax1 {
-    background-image: url('ocean2.jpg');
+    background-image: url('ocean2.png');
 }
 
 .parallax2 {
-    background-image: url('hdd.jpg');
+    background-image: url('hdd.png');
 }
 
 /* Content inside the parallax */
